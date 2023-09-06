@@ -1,0 +1,111 @@
+.header {
+    width: 100%;
+
+    &__inner {
+        padding: 55px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        &_list {
+            display: flex;
+
+            &--item {
+                position: relative;
+                list-style: none;
+                margin-right: 55px;
+                text-transform: uppercase;
+                color: #224f34;
+                cursor: pointer;
+                overflow: hidden;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #224f34;
+                    transition: all 0.15s;
+                }
+
+                &:hover {
+                    &::after {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+
+        button {
+            background: transparent;
+            border: 0;
+            outline: none;
+        }
+
+        &_cart {
+            position: relative;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all .15s;
+
+            &::after {
+                position: absolute;
+                content: '+';
+                transform: scale(1.5);
+                bottom: 10px;
+                right: 10px;
+                color: #224f34;
+            }
+
+            &:hover {
+                background: #a8e0bf
+            }
+        }
+
+        &_auth {
+            padding: 11px 41px;
+            border: 2px solid #224f34 !important;
+            border-radius: 4px;
+            margin-left: 60px;
+            color: #224f34;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            div {
+                position: relative;
+                overflow: hidden;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    bottom: 0px;
+                    left: -100%;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #224f34;
+                    transition: all .15s;
+                }
+            }
+
+            &:hover {
+                div::after {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
