@@ -43,7 +43,7 @@ const BestSelling: React.FC = () => {
                     <div className='bestSelling__cards'>
                         {
                             cardArr.map(item => (
-                                <Card key={item.id} {...item} />
+                                <Card key={item.id} {...item} height={566} width={430} />
                             ))
                         }
                     </div>

@@ -1,13 +1,20 @@
 import React from 'react'
 import { ICardProps } from '../../types/cardtTypes'
-
-import '../../styles/card.scss'
 import { randomBgCardColor } from '../../utils/randomBgCardColor'
 
-const Card: React.FC<ICardProps> = ({ title, img, bg, price, reting }) => {
+import '../../styles/card.scss'
+
+const Card: React.FC<ICardProps & { width: number, height: number }> = ({ title, img, bg, price, reting, height, width }) => {
     return (
         <div className='card'>
-            <div className='card__img' style={!bg ? { backgroundColor: randomBgCardColor() } : {}}>
+            <div
+                className='card__img'
+                style={
+                    !bg ?
+                        { backgroundColor: randomBgCardColor(), width, height } :
+                        { width, height }
+                }
+            >
                 <img src={img} alt="cardImg" />
             </div>
             <div className='card__content'>

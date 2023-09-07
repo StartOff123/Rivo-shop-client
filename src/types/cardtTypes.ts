@@ -3,6 +3,6 @@ export interface ICardProps {
     title: string
     price: number
     reting: number
-    img: string,
+    img: string
     bg: boolean
 }

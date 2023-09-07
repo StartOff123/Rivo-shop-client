@@ -1,4 +1,58 @@
 .card {
     border-radius: 3px;
-    
+
+    &__img {}
+
+    &__content {
+        text-align: center;
+        padding-top: 50px;
+
+        h6 {
+            color: #373737;
+            text-align: center;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        &_bottom {
+            margin-top: 8px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            span {
+                position: relative;
+                text-align: center;
+                color: #454545;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                &:nth-child(1) {
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        right: -1px;
+                        width: 1px;
+                        height: 100%;
+                        background: #454545;
+                    }
+                }
+
+                &:nth-child(2) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    svg {
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
 }
