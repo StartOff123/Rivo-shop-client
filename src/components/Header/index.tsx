@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '..'
 
 import '../../styles/header.scss'
 
@@ -40,9 +41,7 @@ const Header: React.FC = () => {
                                 </defs>
                             </svg>
                         </button>
-                        <button className='header__actions_auth'>
-                            <div>Login</div>
-                        </button>
+                        <Button className='header__actions_auth'>login</Button>
                     </div>
                 </div>
             </div>

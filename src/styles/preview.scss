@@ -1,4 +1,6 @@
 .preview {
+    margin-bottom: 160px;
+    
     &__inner {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -25,6 +27,10 @@
             font-weight: 500;
             line-height: 220%;
         }
+
+        &_btn {
+            box-shadow: 6px 33px 59px 0px rgba(0, 0, 0, 0.30);
+        }
     }
 
     &__left {
@@ -38,7 +44,7 @@
             position: relative;
             background-color: #64d892;
             border-radius: 130px 34px;
-            box-shadow: inset 2px 2px 20px  rgba($color: #000000, $alpha: .1);
+            box-shadow: inset -5px -3px 20px  rgba($color: #000000, $alpha: .1);
 
             svg {
                 position: absolute;

@@ -1,2 +1,5 @@
 export { default as Header } from './Header'
 export { default as Preview } from './Preview'
+export { default as Button } from './Button'
+export { default as BestSelling } from './BestSelling'
+export { default as Card } from './Card'

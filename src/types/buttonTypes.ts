@@ -1,8 +1,7 @@
 import React from 'react'
 
-export interface IButton {
-    type: string,
-    content: string,
+export interface IButtonProps {
+    type?: string,
     icon?: React.ReactNode
-    className: string
+    className?: string
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import classNames from 'classnames'
-import { IButton } from '../../types/buttonTypes'
+import { IButtonProps } from '../../types/buttonTypes'
 
-const Button: React.FC<IButton> = ({ className, content, type, icon }) => {
+import '../../styles/button.scss'
+
+const Button: React.FC<React.PropsWithChildren<IButtonProps>> = ({ className, type, icon, children}) => {
     return (
         <button className={
             classNames(
@@ -11,7 +13,7 @@ const Button: React.FC<IButton> = ({ className, content, type, icon }) => {
                 className ? className : ''
             )}
         >
-            <div>{content}</div>
+            <div>{children}</div>
             {icon && <span>{icon}</span>}
         </button>
     )

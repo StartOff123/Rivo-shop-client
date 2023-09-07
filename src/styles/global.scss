@@ -18,23 +18,19 @@ body {
     margin: 0 auto;
 }
 
-.btn {
-    border-radius: 3px;
-    background: #224f34;
-    padding: 20px 70px;
-    border: none;
-    outline: none;
-    box-shadow: 6px 33px 59px 0px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    font-size: 20px;
+.block-title {
+    color: #224f34;
+    font-family: Roboto Slab;
+    font-size: 64px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all .15s;
+}
 
-    &:hover {
-        background: lighten($color: #224f34, $amount: 5);
-    }
+.block-description {
+    color: #224f34;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }

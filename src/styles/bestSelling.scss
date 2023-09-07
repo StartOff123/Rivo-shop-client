@@ -1,0 +1,22 @@
+.bestSelling {
+    background-color: #fff;
+    padding: 114px 0;
+
+    &__title {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 37px;
+        }
+
+        p {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 21px;
+    }
+}

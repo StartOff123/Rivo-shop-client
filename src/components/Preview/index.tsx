@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '..'
 
 import '../../styles/preview.scss'
 
@@ -10,7 +11,7 @@ const Preview: React.FC = () => {
                     <div className='preview__right'>
                         <h1>Discover and Find Your Own Fashion!</h1>
                         <p>Explore our curated collection of stylish clothing and accessories tailored to your unique taste.</p>
-                        <button className='btn'>Explore Now</button>
+                        <Button type='primory' className='preview__right_btn'>Explore Now</Button>
                     </div>
                     <div className='preview__left'>
                         <div className='preview__left_img'>
